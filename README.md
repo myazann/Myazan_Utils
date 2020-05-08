@@ -3,7 +3,7 @@ Some useful scripts for a ML Pipeline
 <h3> Custom_Export_Graphviz </h3>
 
 This script is an altered version of Sklearn's tree._export script. It allows to plot a Decision Tree which has the original class 
-distributions in the nodes if class_weight parameter is used. 
+distributions in the nodes while using the class_weight parameter. 
 
 When you use class_weight parameter in a Tree, Sklearn shows the values in the nodes as weighted. For example let's say that you use
 class_weight as {0:1,1:5}. In your plotted tree, a node has a value of [100 100], and sample size as 120. This can be misleading 
