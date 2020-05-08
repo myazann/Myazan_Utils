@@ -4,10 +4,8 @@
 # In[61]:
 
 
-def Feature(df,target,depth = 3,min_node_size = 100):
+def Feature_Class_Distribution(df,target,depth = 3,min_node_size = 100):
     
-    
-
     class_report = {}
     dot_file = ""
     png_file = ""
@@ -52,7 +50,6 @@ def Feature(df,target,depth = 3,min_node_size = 100):
         class_report[column] = classification_report(y_test, y_pred,output_dict = True)
 
 
-
         dot_file = "dot_files/" + column + ".dot"
         export_graphviz(dt, dot_file , class_names=True, filled = True, proportion = True)
 
@@ -71,10 +68,7 @@ def Feature(df,target,depth = 3,min_node_size = 100):
         threshold[column] = thres
         thres = []
         
-        
-    
-    
-    
+           
     for key in threshold:
         i = 1
         while i < len(threshold[key]):        
@@ -107,9 +101,7 @@ def Feature(df,target,depth = 3,min_node_size = 100):
             },ignore_index=True)              
     
     result["Distribution of Class 1"] = (result["Count of Class 1"]/result["Total Count"])*100
-
     result["Distribution of Class 1"] = result["Distribution of Class 1"].astype("float")
-
     result["Distribution of Class 1"] = round(result["Distribution of Class 1"],2)
 
 
