@@ -13,6 +13,8 @@ This is the cause of weighted classes.
 With this script, you can call export_graphviz with an additional class_weight parameter and, granted that you entered your tree's original 
 class_weight, it will return a representation of your tree with the actual class sizes in the nodes.
 
-Usage:
+<h4>Usage:</h4>
 
-import 
+import Custom_Export_Graphviz 
+
+Custom_Export_Graphviz.export_graphviz(...,class_weight = {class_weights of your tree})
