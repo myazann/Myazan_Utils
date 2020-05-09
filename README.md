@@ -14,10 +14,12 @@ With this script, you can call export_graphviz with an additional class_weight p
 
 <h4>Usage:</h4>
 
+
+```python
 import Custom_Export_Graphviz 
 
 Custom_Export_Graphviz.export_graphviz(... (Standard parameters of export_graphviz)), class_weight = {class_weights of your tree} (default is "balanced"))
-
+'''
 
 <h3> Feature_Class_Distribution </h3>
 
