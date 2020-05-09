@@ -17,4 +17,4 @@ class_weight, it will return a representation of your tree with the actual class
 
 import Custom_Export_Graphviz 
 
-Custom_Export_Graphviz.export_graphviz(...,class_weight = {class_weights of your tree})
+Custom_Export_Graphviz.export_graphviz(... (Standard parameters of export_graphviz)),class_weight = {class_weights of your tree} (default is "balanced"))
