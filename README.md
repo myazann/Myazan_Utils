@@ -19,7 +19,7 @@ With this script, you can call export_graphviz with an additional class_weight p
 import Custom_Export_Graphviz 
 
 Custom_Export_Graphviz.export_graphviz(... (Standard parameters of export_graphviz)), class_weight = {class_weights of your tree} (default is "balanced"))
-'''
+```
 
 <h3> Feature_Class_Distribution </h3>
 
@@ -39,6 +39,8 @@ feature it worked and puts it into a folder.
 
 <h4> Usage </h4>
 
+```python
 import Feature_Class_Distribution
 
 Feature_Class_Distribution(df, target, max_depth = 3, min_leaf_node_size = 100)
+```
