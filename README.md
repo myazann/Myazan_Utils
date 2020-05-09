@@ -16,7 +16,7 @@ With this script, you can call export_graphviz with an additional class_weight p
 
 
 ```python
-import Custom_Export_Graphviz 
+from Myazan_Utils import Custom_Export_Graphviz 
 
 Custom_Export_Graphviz.export_graphviz(... (Standard parameters of export_graphviz)), class_weight = {class_weights of your tree} (default is "balanced"))
 ```
@@ -32,7 +32,7 @@ and uses these thresholds to cut the feature into bins. This method can be utili
 Feature Class Distribution takes the dataframe and the name of your target value as parameters. It individually works for every 
 feature in your dataframe. Depth and Min Leaf Node Size of the Tree's can also be given as parameters. It returns a dataframe where
 all the features are seperated into bins. A row consists of a bin, it has those columns: Name of the Feature, 
-Starting value of the Bin, Ending Value of the Bin, Count of Class 1, Count of Class 0, Total Count, Distribution of Class1
+Starting value of the Bin, Ending Value of the Bin, Count of Class 1, Count of Class 0, Total Count, Distribution of Class1.
 
 Besides returning the results in a dataframe, this method also creates the graphs of all the trees created, it names each tree with the
 feature it worked and puts it into a folder.
@@ -40,7 +40,7 @@ feature it worked and puts it into a folder.
 <h4> Usage </h4>
 
 ```python
-import Feature_Class_Distribution
+from Myazan_Utils import Feature_Class_Distribution
 
 Feature_Class_Distribution(df, target, max_depth = 3, min_leaf_node_size = 100)
 ```
