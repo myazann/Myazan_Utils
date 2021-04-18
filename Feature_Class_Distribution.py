@@ -4,7 +4,7 @@
 # In[61]:
 
 
-def Feature_Class_Distribution(df, target, depth = 3, min_leaf_node_size = 100):
+def Feature_Class_Distribution(df, target, depth=3, min_leaf_node_size=100):
     
     class_report = {}
     dot_file = ""
